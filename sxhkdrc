@@ -1,6 +1,3 @@
-## Copyright (C) 2020-2024 Aditya Shakya <adi1090x@gmail.com>
-##
-## Keybindings config for Archcraft's BSPWM
 
 ##---------- Keybindings for bspwm ----------##
 
@@ -22,16 +19,11 @@ super + d
 alt + F2
 	rofi_runner
 
-# Rofi Menus/Applets
-super + {b,n,r,s,t,w,x}
-	{rofi_bluetooth,nmd,rofi_asroot,rofi_screenshot,rofi_themes,rofi_windows,rofi_powermenu}
-
 ##---------- Applications ----------##
 
 # Launch Apps
 super + shift + e
 	thunar
-# geany
 # Terminal Apps
 ctrl + alt + {r,h}
 	alacritty --config-file ~/.config/bspwm/alacritty/alacritty.toml -e {ranger,htop}
@@ -151,10 +143,6 @@ super + l
 # Toggle beetwen floating & tiled
 super + space
     bspc node -t "~"{floating,tiled}
-
-# Pseudo Tiled & tiled mode
-super + shift + space
-    bspc node -t "~"{pseudo_tiled,tiled}
 
 # Set the node flags
 super + ctrl + {m,x,y,z}
